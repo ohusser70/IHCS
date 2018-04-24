@@ -16,6 +16,7 @@
 
 class Joueur
 {
+    friend class Equipe;
     std::string prenoms[5]={ "Christophe", "Sven", "Erik", "Pablo", "Jules"};
     std::string noms[5]={ "Bays", "Pavoni", "Cretin", "Gretzky", "Bykov"};
     public:

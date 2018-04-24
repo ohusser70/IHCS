@@ -6,20 +6,30 @@
 */
 
 #include <iostream>
-#include "joueur.h"
 #include <ctime>
 #include <cstdlib>
+#include "joueur.h"
+#include "Equipe.h"
 
 using namespace std;
 
 int main()
 {
-    cout << "Hello world!\n Welcome to ICHS v0.1" << endl;
+    cout << "Welcome to ICHS v0.1\n" << endl;
     srand(time(0));
-    Joueur j1, j2, j3;
+    Joueur j1, j2, j3, j4, j5;
     j1.Afficher();
     j2.Afficher();
     j3.Afficher();
-
+    j4.Afficher();
+    j5.Afficher();
+    Equipe team1("ARC_TIC_BEARS");
+    team1.Afficher();
+    team1.Engager(&j1);
+    team1.Engager(&j2);
+    team1.Engager(&j3);
+    team1.Engager(&j4);
+    team1.Engager(&j5);
+    team1.Afficher();
     return 0;
 }
