@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+#CodeBlocks files
+*.layout
+
 # Compiled Object files
 *.slo
 *.lo
