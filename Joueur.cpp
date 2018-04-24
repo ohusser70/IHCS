@@ -9,12 +9,13 @@
 Joueur::Joueur()
 {
     nomJoueur = prenoms[rand()%5] + " " +noms[rand()%5];
+    this->niveauJoueur = rand()%100 +1;
 }
 
 
 void Joueur::Afficher() const
 {
-    std::cout<< nomJoueur << std::endl;
+    std::cout<< nomJoueur << " (niveau: " << niveauJoueur<<")"<< std::endl;
 }
 
 Joueur::~Joueur()

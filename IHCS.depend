@@ -1,4 +1,16 @@
 # depslib dependency file v1.0
-1524554999 source:c:\dev\gl\git\ihcs\main.cpp
+1524556284 source:c:\dev\gl\git\ihcs\main.cpp
+	<iostream>
+	"joueur.h"
+	<ctime>
+	<cstdlib>
+
+1524556287 source:c:\dev\gl\git\ihcs\joueur.cpp
+	"Joueur.h"
+	<iostream>
+	<ctime>
+	<cstdlib>
+
+1524556348 c:\dev\gl\git\ihcs\joueur.h
 	<iostream>
 
