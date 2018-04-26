@@ -10,6 +10,7 @@
 #include <cstdlib>
 #include "joueur.h"
 #include "Equipe.h"
+#include "Match.h"
 
 using namespace std;
 
@@ -24,12 +25,20 @@ int main()
     j4.Afficher();
     j5.Afficher();
     Equipe team1("ARC_TIC_BEARS");
-    team1.Afficher();
     team1.Engager(&j1);
     team1.Engager(&j2);
     team1.Engager(&j3);
     team1.Engager(&j4);
     team1.Engager(&j5);
     team1.Afficher();
+    Equipe team2("MIGHTY DUCKS");
+    team2.Engager(&j2);
+    team2.Engager(&j2);
+    team2.Engager(&j2);
+    team2.Engager(&j2);
+    team2.Engager(&j2);
+    team2.Afficher();
+    Match m(team1, team2);
+    m.jouerMatch(true);
     return 0;
 }
