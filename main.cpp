@@ -11,6 +11,7 @@
 #include "joueur.h"
 #include "Equipe.h"
 #include "Match.h"
+#include "Championnat.h"
 
 using namespace std;
 
@@ -30,14 +31,18 @@ int main()
     team1.Engager(&j3);
     team1.Engager(&j4);
     team1.Engager(&j5);
-    team1.Afficher();
     Equipe team2("MIGHTY DUCKS");
     team2.Engager(&j2);
     team2.Engager(&j2);
     team2.Engager(&j2);
     team2.Engager(&j2);
     team2.Engager(&j2);
-    team2.Afficher();
+
+    Championnat champ("SUPER ULTRA LEAGUE");
+    champ.ajouterEquipe(team1);
+    champ.ajouterEquipe(team2);
+    champ.afficher();
+
     Match m(team1, team2);
     m.jouerMatch(true);
     return 0;

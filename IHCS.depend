@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1524759636 source:c:\dev\gl\git\ihcs\main.cpp
+1524833573 source:c:\dev\gl\git\ihcs\main.cpp
 	<iostream>
 	<ctime>
 	<cstdlib>
 	"joueur.h"
 	"Equipe.h"
 	"Match.h"
+	"Championnat.h"
 
 1524564255 source:c:\dev\gl\git\ihcs\joueur.cpp
 	"Joueur.h"
@@ -23,11 +24,20 @@
 1524601688 source:c:\dev\gl\git\ihcs\equipe.cpp
 	"Equipe.h"
 
-1524759418 source:c:\dev\gl\git\ihcs\match.cpp
+1524759679 source:c:\dev\gl\git\ihcs\match.cpp
 	"Match.h"
 
 1524759449 c:\dev\gl\git\ihcs\match.h
 	"Equipe.h"
 	<ctime>
 	<cstdlib>
+
+1524833562 source:c:\dev\gl\git\ihcs\championnat.cpp
+	"Championnat.h"
+
+1524833546 c:\dev\gl\git\ihcs\championnat.h
+	"Equipe.h"
+	"Match.h"
+	<iostream>
+	<vector>
 
